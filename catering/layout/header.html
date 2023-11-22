@@ -1,3 +1,17 @@
+<?php
+// ...
+
+// Inisialisasi variabel
+$nama = ""; // Ini akan menyimpan username jika pengguna sudah login
+
+// Periksa apakah pengguna sudah login
+session_start();
+if(isset($_SESSION['nama'])) {
+    $nama = $_SESSION['nama'];
+}
+
+// ...
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +38,7 @@
             <li class="li-navbar">
                 <a href="Info-Pembayaran.php" class="a-navbar">Info Pembayaran</a>
             </li>
+            <?php if(empty($nama)): ?>
             <li class="dropdown">
                 <span class="dropspn">Login/Register</span>
                 <div class="dropdown-content">
@@ -31,6 +46,18 @@
                     <a href="Register.php">Register</a>
                 </div>
             </li>
+            <?php else: ?>
+            <li class="li-navbar">
+                <a href="Pembayaran.php" class="a-navbar">Pembayaran</a>
+            </li>
+            <li class="dropdown">
+                <span class="dropspn">Hi <?php echo $nama; ?></span>
+                <div class="dropdown-content">
+                    <a href="Profil.php">Profil</a>
+                    <a href="Logout.php">Logout</a>
+                </div>
+            </li>
+            <?php endif; ?>
         </ul>
     </div>
     <!-- end navbar -->
