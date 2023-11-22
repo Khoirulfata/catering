@@ -1,0 +1,52 @@
+.div {
+    height:70vh;
+    border-top: 1px solid black;
+    background-image: url('Buah.jpg'); /* Ganti 'url_gambar_anda.jpg' dengan URL gambar Anda */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 600px 400px;
+    background-position: right;
+}
+.form {
+    width: 200px;
+    height 200px;
+    padding-top: 100px;
+    padding-left: 100px;
+    list-style-type: none;
+}
+input {
+    width: 200px;
+    padding:10px;
+}
+.diva {
+height: 70vh;
+}
+.daftar {
+    background-color: red;
+    height: 100px;
+}
+.isi {
+    padding-top: 50px;
+    padding-left: 200px;
+    color:white;
+}
+.makanan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.Rp {
+    background-color: red;
+    color:white;
+    height: 40px;
+    width: 60px;
+    padding: 10px;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.lide {
+    font-size: 10px;
+    color:white;
+    text-decoration: none;
+}
