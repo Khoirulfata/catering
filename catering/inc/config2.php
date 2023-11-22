@@ -26,10 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        session_start();
-        $_SESSION['email'] = $email;
-        header("Location: index.php");
-        exit();
+         // Login berhasil, ambil informasi pengguna dan set session
+         $row = $result->fetch_assoc();
+         session_start();
+         $_SESSION['nama'] = $row['nama']; // Gunakan nama sebagai username pada Navbar
+         $_SESSION['email'] = $email; // Simpan email dalam session (sesuai kebutuhan)
+         header("Location: index.php");
+         exit();
     } else {
         echo "Login gagal. Periksa kembali username dan password Anda.";
     }
