@@ -1,6 +1,6 @@
 <?php
     include"inc/config.php"; 
-	include"layout/header.html";
+	include"layout/header.php";
 ?>
     <!-- content -->
     <div class="div">
