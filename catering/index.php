@@ -1,5 +1,6 @@
 <?php 
-	include"layout/header.html";
+	include"layout/header.php";
+        include"inc/config2.php";
 ?>
     <div>
         <ul class="content1">
