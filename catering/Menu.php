@@ -1,5 +1,6 @@
 <?php 
-	include"layout/header.html";
+    include"inc/config2.php";
+	include"layout/header.php";
 ?>
     <!-- content -->
     <div class="diva">
