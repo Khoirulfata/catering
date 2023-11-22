@@ -1,21 +1,21 @@
 <?php 
-	include"layout/header.html";
+        include"inc/config2.php"; 
+	include"layout/header.php";
 ?>
     <!-- content -->
     <div class="div">
         <ul class="ulu">
-            <form class="form">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <li>
-                    <label for="Email">Email :</label><br>
-                    <input type="text" name="email" id="email" placeholder="@xxxxx">
+                    <label for="email">Email :</label><br>
+                    <input type="text" name="email" id="email" placeholder="@xxxxx" required>
                 </li>
                 <li>
                     <label for="password">Password :</label><br>
-                    <input type="password" name="password" id="password" placeholder="xxxxxxx">
+                    <input type="password" name="password" id="password" placeholder="xxxxxxx" required>
                 </li><br>
                 <li>
-                    <button type="submit" name="submit" style="background-color: red;color:white;
-                     padding: 10px;">Login</button>
+                <input type="submit" value="Login">
                 </li>
             </form>
         </ul> 
