@@ -29,7 +29,7 @@
                         <img src='data:image/jpeg;base64," . base64_encode($rowFavorit['gambar']) . "' width='200' height='150' alt='Gambar Produk'>
                         <h3>{$rowFavorit['nama']}</h3>
                         <p>Harga: {$rowFavorit['harga']}</p>
-                        <button style='background-color: blue; color: white;'>Lihat Detail</button>
+                        <a href='detail_produk.php?id={$rowFavorit['id']}' style='background-color: blue; color: white; text-decoration: none; padding: 0px; font-size:15px;'>Lihat Detail</a>
                         <button style='background-color: red; color: white; float: right;'>Pesan</button>
                       </div>";
             }
@@ -52,7 +52,7 @@
                         <img src='data:image/jpeg;base64," . base64_encode($rowTerbaru['gambar']) . "' width='200' height='150' alt='Gambar Produk'>
                         <h3>{$rowTerbaru['nama']}</h3>
                         <p>Harga: {$rowTerbaru['harga']}</p>
-                        <button style='background-color: blue; color: white;'>Lihat Detail</button>
+                        <a href='detail_produk.php?id={$rowTerbaru['id']}' style='background-color: blue; color: white; text-decoration: none; padding: 0px; font-size:15px;'>Lihat Detail</a>
                         <button style='background-color: red; color: white; float: right;'>Pesan</button>
                       </div>";
             }
