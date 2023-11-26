@@ -37,7 +37,7 @@ if ($result) {
                     <img src='data:image/jpeg;base64," . base64_encode($row['gambar']) . "' width='200' height='150' alt='Gambar Produk'>
                     <h2>{$row['nama']}</h2>
                     <p>Harga: {$row['harga']}</p>
-                    <button style='background-color: blue; color: white;'>Lihat Detail</button>
+                    <a href='detail_produk.php?id={$row['id']}' style='background-color: blue; color: white; text-decoration: none; padding: 0px; font-size:15px;'>Lihat Detail</a>
                     <button style='background-color: red; color: white; float: right;'>Pesan</button>
                 </div>";
 
