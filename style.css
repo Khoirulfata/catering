@@ -1,0 +1,130 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+}
+.ul-navbar {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.li-navbar {
+    color: black;
+    list-style-type: none;
+    padding: 20px;
+    margin: 40px;
+}
+.dropdown {
+    color: black;
+    list-style-type: none;
+    padding: 20px;
+    margin: 40px;
+}
+.a-navbar:hover {
+    color:aqua;
+}
+.a-navbar {
+    text-decoration: none;
+    color: black;
+}
+.dropspn {
+    cursor:pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }  
+.content1 {
+    background-color: red;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.li-content {
+    list-style-type: none;
+    padding: 30px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+.img-content {
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+.content2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.li-content2 {
+    list-style-type: none;
+    padding-bottom: 170px;
+    margin: 20px
+}
+.a-content {
+    padding-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+}
+.a-content1 {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+}
+.a-content2 {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 80px;
+}
+.gambar {
+  padding: 30px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 10vh;
+}
+.a-footer {
+    color: white;
+}
+.thanks {
+    font-size: 50px;
+}
