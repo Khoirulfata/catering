@@ -1,10 +1,10 @@
 <?php 
+    include"inc/config2.php";  
 	include"layout/header.php";
-    include"inc/config2.php";
-    
 ?>
     <!-- content -->
-    <div class="div">
+<div class="div">
+
         <ul class="ulu">
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <li>
@@ -20,7 +20,7 @@
                 </li>
             </form>
         </ul> 
-    </div>
+</div>
     <!-- end content -->
 <?php 
 	include"layout/footer.html";
