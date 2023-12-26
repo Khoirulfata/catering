@@ -1,5 +1,5 @@
 <?php
-include "../inc/config.php";
+include "../inc/config2.php";
 if(!empty($_SESSION['iam_admin'])){
     redir("index.php");
 }
