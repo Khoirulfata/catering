@@ -1,5 +1,5 @@
 <?php
-include "inc/config.php";
+include "../inc/config.php";
 validate_admin_not_login("login.php");
 include "inc/header.php";
 
