@@ -3,10 +3,6 @@ html {
     padding: 0;
     margin: 0;
 }
-.centered-text {
-    text-align: center;
-}
-
 .gambar {
    width: 100px;
    height: 100px;
@@ -15,9 +11,9 @@ html {
 .navbar {
     background-color: red;
     width: 100%;
-    height: 50px;
+    height: 60px;
   list-style: none;
-  margin-top: 60;
+  margin-top: 40;
 }
 .ul-navbar {
     height: px;
@@ -121,12 +117,16 @@ font-size:28px ;
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  .mx-auto {
-      width: 800px
-  }
+  /* Tombol Edit (warna hijau) */
+.tombol {
+  background-color: #28a745; /* Warna hijau Bootstrap */
+  color: #fff; /* Warna teks putih */
+  padding: 3px;
+}
 
-  .card {
-      margin-top: 100px;
-  }
-
-  
+/* Tombol Hapus (warna merah) */
+.tombol2 {
+  background-color: #dc3545; /* Warna merah Bootstrap */
+  color: #fff; /* Warna teks putih */
+  padding: 3px;
+}
