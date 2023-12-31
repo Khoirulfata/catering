@@ -40,11 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     <div class="container">
         <br>
         <br>
-        <br>
-
-        <!-- Tambah Data -->
+        <h4>Daftar User</h4>
         <a href="modals/tambahuser.php" class="btn btn-primary" role="button">Add Data</a>
-
         <br>
 
         <table class="my-3 table table-bordered">
