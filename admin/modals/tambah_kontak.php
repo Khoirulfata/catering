@@ -1,7 +1,11 @@
+<?php
+include "../inc/header.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Tambah Kontak</title>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
@@ -45,6 +49,8 @@
             //Kondisi apakah berhasil atau tidak dalam mengeksekusi query diatas
             if ($hasil) {
                 echo "<div class='alert alert-success'> Data Berhasil disimpan.</div>";
+                header("Location: ../kontak.php");
+                exit();
             } else {
                 echo "<div class='alert alert-danger'> Data Gagal disimpan. Error: " . mysqli_error($kon) . "</div>";
             }
