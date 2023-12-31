@@ -43,9 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     <div class="container">
         <br>
         <br>
-        <br>
-
-        <!-- Tambah Data -->
+        <h4>Daftar Kontak</h4>
         <a href="modals/tambah_kontak.php" class="btn btn-primary" role="button">Add Data</a>
 
         <br>
